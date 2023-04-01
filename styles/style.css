@@ -584,7 +584,21 @@ p {
   margin-bottom: 0;
 }
 
+.countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
 
+#timer {
+  color: red;
+  animation: countdown 10s linear forwards;
+}
+
+@keyframes countdown {
+  from { width: 100%; }
+  to { width: 0; }
+}
 
 /*
 ███████ ██████  ██████   ██████  ██████  

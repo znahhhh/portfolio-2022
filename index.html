@@ -11,6 +11,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/style.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Sen, sans-serif;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body class="holding-page">
@@ -22,11 +30,27 @@
         </figure>
         <h1 class="holding-page-title">Hanz Krystlarrz's Portfolio Launching Soon!</h1>
       </a>
+      <div class="countdown">
+        <span id="timer">1:00</span>
+      </div>
     </div>
     <div class="holding-page-footer">
       <p class="holding-page-copyright">Copyright 2023. All rights reserved.</p>
     </div>
   </div>
+  <script>
+    var seconds = 60;
+    function countdown() {
+      seconds = seconds - 1;
+      if (seconds < 0) {
+        clearInterval(countdownTimer);
+        document.getElementById("timer").innerHTML = "Portfolio is live!";
+      } else {
+        document.getElementById("timer").innerHTML = seconds;
+      }
+    }
+    var countdownTimer = setInterval('countdown()', 1000);
+  </script>
 </body>
 
 </html>
