@@ -52,7 +52,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/temp/up-cursor.png"), auto !important;
+  cursor: url("*"), auto !important;
 }
 
 *,
@@ -75,14 +75,14 @@ html {
   --primary-text-color: #222;
   --holding-page-title-color: #ebedf0;
   --accent-color: #5200FF;
-  --overlay-color: #5200FF;
+  --overlay-color: #eaa623;
   --hyperlink-color: #444;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
   --body-typeface: "Inter", sans-serif;
   --heading-typeface: 'Eczar', serif;
   --project-title-typeface: 'Eczar', serif;
-  --project-title-color: #723850;
+  --project-title-color: #ffffff;
   --heart-color: darkred;
   --off-white: #f8f8ff;
   --isabelline: #f4f0ec;
@@ -151,6 +151,10 @@ h1 {
 
 .overlay-title {
   font-size: 2.875rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -550,10 +554,7 @@ p {
   text-align: center;
   width: 100%;
   min-height: 100vh;
-  background:
-    linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(18, 8, 80, 0.62), #4e54c8),
-    url(/assets/temp/noise.svg);
-  /* https://grainy-gradients.vercel.app/ */
+  background: black url(/assets/temp/noise.svg);
 }
 
 
@@ -594,7 +595,10 @@ p {
   place-items: center;
 }
 
-.error-page-wrapper {}
+.error-page-wrapper {
+  text-align: center;
+
+}
 
 .error-page-inner-container {
   text-align: center;

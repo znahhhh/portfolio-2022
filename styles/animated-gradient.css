@@ -1,27 +1,27 @@
 :root {
-    --gradient: radial-gradient(circle, #7bd5f5, #787ff6, #4adede, #1ca7ec, #1f2f98);
+    --gradient: linear-gradient(45deg, #334337, #3c573e, #907b4c, #a09376, #aba4a1);
 }
 
 .gradient-animation {
-    background-size: 600%;
-    background-image: var(--gradient);
-    animation: bg-animation 50s infinite alternate;
+  background-size: 600%;
+  background-image: var(--gradient);
+  animation: bg-animation 15s infinite alternate;
 }
 
 @keyframes bg-animation {
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: 100%;
-    }
+  0% {
+      background-position: 0;
+  }
+  100% {
+      background-position: 100%;
+  }
 }
 
 @keyframes bg-animation {
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: 100%;
-    }
+  0% {
+      background-position: 0;
+  }
+  100% {
+      background-position: 100%;
+  }
 }
