@@ -339,6 +339,7 @@ p {
 .portfolio,
 .project-wrapper {
   padding: .25rem;
+  background-color: #FDF5E6;
 }
 
 /* Defining the work page grid */
@@ -439,7 +440,7 @@ p {
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   min-height: 100vh;
-  background: #f5f5f5;
+  background: #FDF5E6;
   padding: 1rem;
 }
 
@@ -845,8 +846,6 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
   .project-aside {
     width: 35%;
     height: 65vh;
-    position: -webkit-sticky;
-    position: sticky;
     top: 5vh;
     padding-right: 2rem;
   }
