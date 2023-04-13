@@ -204,10 +204,16 @@ a:active  { color: var(--hover-color); /* Tap on mobile */ }
 }
 
 .custom-navigation:hover {
-  background: url(assets/temp/heading-background.svg);
   background-size: 15%;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.custom-navigation{
+  font-size: large;
+  font-family: 'Sen', sans-serif;
+  color: white !important;
+  border-color: black;
 }
 
 p {
@@ -267,7 +273,8 @@ p {
   flex-direction: column;
 }
 .hero-header {
-  background-color:#FDF5E6;
+  --gradient: linear-gradient(45deg, #907b4c, #a09376, #aba4a1);
+  background-image: var(--gradient);
 }
 
 .branding-navigation {
@@ -499,6 +506,13 @@ p {
   justify-content: space-between;
 }
 
+.download-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .arrow {
   padding: 0;
 }
@@ -513,7 +527,7 @@ p {
 .project-image {
   width: 100%;
   font-size: 12rem;
-  min-height: 50vh;
+  min-height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
